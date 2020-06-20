@@ -1,11 +1,21 @@
-.containter{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-}
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
 
 .tabby{
     height: 500px;
+    margin:20px;
+}
+.right{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding: 50px;
+    font-family: 'Poppins', sans-serif
+}
+
+p{
+    font-family: 'Libre Baskerville', serif;
 }
