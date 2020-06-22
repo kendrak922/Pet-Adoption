@@ -1,0 +1,13 @@
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input, textarea{
+width: 500px;
+}
+.contactHead{
+
+}
