@@ -1,4 +1,6 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");   
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap");
 form{
     display: flex;
     flex-direction: column;
@@ -7,7 +9,28 @@ form{
 }
 input, textarea{
 width: 500px;
+height:40px;
+border-radius: 10px;
+font-family: 'Poppins', sans-serif
 }
 .contactHead{
+font-size:80px;
+font-family: 'Caveat', cursive;
+margin:50px;
+color: #023C40;
+border-bottom: 3px solid;
+}
+textarea{
+ height:100px;
+}
+label{
+ 
+  font-size: 24px;
+  color: #023C40;
+  font-family: 'Poppins', sans-serif;
+}
 
+.submit{
+    width: 100px;
+    background-color:#FFE4FA; 
 }
