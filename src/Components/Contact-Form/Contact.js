@@ -11,7 +11,6 @@ const { handleChange, handleSubmit, values, errors} = useForm(submit, validateFo
 function submit(){
     console.log("Submitted Succesfully")
     console.log(values)
-
 }
 
  return(
