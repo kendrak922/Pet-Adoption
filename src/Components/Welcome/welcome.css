@@ -1,21 +1,70 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
+.flex-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items:center;
 
-.tabby{
-    height: 500px;
-    margin:20px;
 }
-.right{
+.title{
+    font-size: 70px;
+    color: #023C40;
+    font-family: 'Poppins', sans-serif;
+
+}
+.tabby{
+    max-height: 500px;
+    max-width: 400px;
+    border-radius: 1%;
+    box-shadow: 10px 3px 5px gray; 
+
+}
+.calico{
+    border-radius: 1%;
+    max-height: 300px;
+    max-width: 400px;
+    box-shadow: 5px 3px 5px gray;
+}
+.text-right{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 50px;
-    font-family: 'Poppins', sans-serif
+    font-family: 'Poppins', sans-serif;
+    background-color: #DE7C5A;
+    max-width: 300px;
+    flex-grow:1;
+
+}
+.text-right p{
+    font-size: 20px;
 }
 
-p{
-    font-family: 'Libre Baskerville', serif;
+.welcome-item{
+    margin: 15px;
+}
+
+.process{
+    margin:20px;
+    max-width: 20rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #48304D; 
+}
+.steps{
+    flex-basis: 100%;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-around;
+}
+.number{
+    font-size:6rem;
+    margin: 2rem;
 }
