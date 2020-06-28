@@ -5,12 +5,14 @@ import Animal from "./Pages/animal-pg.js";
 import  Form from "./Pages/adopt-form-pg.js";
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import Nav from './Components/Nav/Nav';
-import "./App.css"
+import Footer from './Components/Footer/Footer';
+import "./App.css";
 
 
 class App extends Component{ 
 render(){
   return(
+  <div>
   <BrowserRouter>
   <div>
     <Nav />
@@ -22,6 +24,8 @@ render(){
      </Switch>
   </div> 
 </BrowserRouter>
+<Footer />
+</div>
 );
 }
 }
