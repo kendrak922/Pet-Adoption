@@ -41,6 +41,7 @@
     max-width: 300px;
     flex-grow:1;
 
+    box-shadow:5px 5px 5px 5px gray; 
 }
 .text-right p{
     font-size: 20px;
@@ -61,10 +62,14 @@
 .steps{
     flex-basis: 100%;
     display: flex;
-    flex-flow:row wrap;
+    flex-flow: row wrap;
     justify-content: space-around;
 }
 .number{
     font-size:6rem;
     margin: 2rem;
+}
+
+.steps :hover{
+animation: stretch;
 }
