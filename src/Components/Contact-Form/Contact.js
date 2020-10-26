@@ -1,4 +1,4 @@
-import './contact.css';
+import './contact.scss';
 import React from "react";
 import useForm from "../../useForm";
 import validateForm from "./validateForm"

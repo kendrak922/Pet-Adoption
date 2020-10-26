@@ -1,4 +1,4 @@
-import './Animal.css';
+import './Animal.scss';
 import React, {Component} from 'react';
 
 

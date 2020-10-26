@@ -1,4 +1,4 @@
-import './welcome.css';
+import './welcome.scss';
 import React, { Component } from "react";
 import Mac from './Mac.JPG';
 import Circe from './Circe.JPG'
@@ -33,7 +33,7 @@ class Welcome extends Component {
                         <p>Once you have fallen in love just fill out an adoption form. We will reach out to you once you've been approved to let you know when you can take home your new family member.</p>
                     </div>
                 </div>
-                <img src={Juniper}></img>
+                <img src={Juniper} alt='yellow dog'></img>
             </div>
         );
     }

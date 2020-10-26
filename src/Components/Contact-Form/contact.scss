@@ -1,0 +1,35 @@
+@import '../../App.scss';
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input, textarea{
+width: 500px;
+height:40px;
+border-radius: 10px;
+font-family: $primary-font;
+}
+.contactHead{
+font-size:80px;
+font-family: $display-font;
+margin:50px;
+color: $dark-blue;
+border-bottom: 3px solid;
+}
+textarea{
+ height:100px;
+}
+label{
+ 
+  font-size: 24px;
+  color: $dark-blue;
+  font-family: $primary-font;
+}
+
+.submit{
+    width: 100px;
+    background-color: $primary-font; 
+}

@@ -6,7 +6,7 @@ import  Form from "./Pages/adopt-form-pg.js";
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import Nav from './Components/Nav/Nav';
 import Footer from './Components/Footer/Footer';
-import "./App.css";
+import "./App.scss";
 
 
 class App extends Component{ 

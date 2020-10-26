@@ -1,9 +1,12 @@
+@import '../../App.scss';
+
 .flex-footer{
     display: flex;
+    font-family: $primary-font;
     flex-direction: row wrap;
-    background-color: #DE7C5A;
+    background-color: $orange;
     justify-content: space-around;
     margin-top: 2em;
     align-items: center;
-    color: #023C40;
+    color: $dark-blue;
 }
