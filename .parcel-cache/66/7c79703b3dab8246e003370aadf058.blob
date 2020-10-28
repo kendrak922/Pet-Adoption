@@ -1,0 +1,105 @@
+"use strict";
+
+var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = void 0;
+
+  require("./Animal.scss");
+
+  var _react = _interopRequireWildcard(require("react"));
+
+  var _jsxFileName = "/Users/kendrakyndberg/Desktop/code/circe-build/src/Components/Animals/Animal.js";
+
+  function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+  function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+  class Animals extends _react.Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        error: null,
+        isLoaded: false,
+        items: []
+      };
+    }
+
+    componentDidMount() {
+      const url = fetch(url).then(res => res.json()).then(result => {
+        this.setState({
+          isLoaded: true,
+          items: result.items
+        });
+      }, // Note: it's important to handle errors here
+      // instead of a catch() block so that we don't swallow
+      // exceptions from actual bugs in components.
+      error => {
+        this.setState({
+          isLoaded: true,
+          error
+        });
+      });
+    }
+
+    render() {
+      const {
+        error,
+        isLoaded,
+        items
+      } = this.state;
+
+      if (error) {
+        return /*#__PURE__*/_react.default.createElement("div", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 41,
+            columnNumber: 18
+          }
+        }, "Error: ", error.message);
+      } else if (!isLoaded) {
+        return /*#__PURE__*/_react.default.createElement("div", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 43,
+            columnNumber: 18
+          }
+        }, "Loading...");
+      } else {
+        return /*#__PURE__*/_react.default.createElement("ul", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 46,
+            columnNumber: 13
+          }
+        }, items.map(item => /*#__PURE__*/_react.default.createElement("li", {
+          key: item.name,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 48,
+            columnNumber: 17
+          }
+        }, item.name, " ", item.price)));
+      }
+    }
+
+  }
+
+  var _default = Animals;
+  exports.default = _default;
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

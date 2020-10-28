@@ -1,0 +1,133 @@
+"use strict";
+
+var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = void 0;
+
+  var _react = _interopRequireWildcard(require("react"));
+
+  var _homePg = _interopRequireDefault(require("./Pages/home-pg.js"));
+
+  var _contactPg = _interopRequireDefault(require("./Pages/contact-pg.js"));
+
+  var _animalPg = _interopRequireDefault(require("./Pages/animal-pg.js"));
+
+  var _adoptFormPg = _interopRequireDefault(require("./Pages/adopt-form-pg.js"));
+
+  var _reactRouterDom = require("react-router-dom");
+
+  var _Nav = _interopRequireDefault(require("./Components/Nav/Nav"));
+
+  var _Footer = _interopRequireDefault(require("./Components/Footer/Footer"));
+
+  require("./App.scss");
+
+  var _jsxFileName = "/Users/kendrakyndberg/Desktop/code/circe-build/src/App.js";
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+  function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+  function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+  class App extends _react.Component {
+    render() {
+      return /*#__PURE__*/_react.default.createElement("div", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15,
+          columnNumber: 3
+        }
+      }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.BrowserRouter, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16,
+          columnNumber: 3
+        }
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17,
+          columnNumber: 3
+        }
+      }, /*#__PURE__*/_react.default.createElement(_Nav.default, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18,
+          columnNumber: 5
+        }
+      }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Switch, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19,
+          columnNumber: 7
+        }
+      }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+        path: "/",
+        component: _homePg.default,
+        exact: true,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20,
+          columnNumber: 8
+        }
+      }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+        path: "/animal",
+        component: _animalPg.default,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21,
+          columnNumber: 8
+        }
+      }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+        path: "/form",
+        component: _adoptFormPg.default,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22,
+          columnNumber: 8
+        }
+      }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+        path: "/contact",
+        component: _contactPg.default,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23,
+          columnNumber: 8
+        }
+      })))), /*#__PURE__*/_react.default.createElement(_Footer.default, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27,
+          columnNumber: 1
+        }
+      }));
+    }
+
+  }
+
+  var _default = App;
+  exports.default = _default;
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

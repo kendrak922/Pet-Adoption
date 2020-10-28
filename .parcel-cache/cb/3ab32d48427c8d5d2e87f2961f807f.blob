@@ -1,0 +1,164 @@
+"use strict";
+
+var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = void 0;
+
+  require("./nav.scss");
+
+  var _react = _interopRequireWildcard(require("react"));
+
+  var _reactRouterDom = require("react-router-dom");
+
+  var _logo = _interopRequireDefault(require("./logo.png"));
+
+  var _jsxFileName = "/Users/kendrakyndberg/Desktop/code/circe-build/src/Components/Nav/Nav.js";
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+  function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+  function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+  class Nav extends _react.Component {
+    render() {
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "header",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 10,
+          columnNumber: 1
+        }
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "container",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11,
+          columnNumber: 3
+        }
+      }, /*#__PURE__*/_react.default.createElement("nav", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12,
+          columnNumber: 3
+        }
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "brand",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13,
+          columnNumber: 3
+        }
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        src: _logo.default,
+        alt: "Logo",
+        className: "logo",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14,
+          columnNumber: 3
+        }
+      }), /*#__PURE__*/_react.default.createElement("p", {
+        className: "company-name",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15,
+          columnNumber: 3
+        }
+      }, " Pet Rescue")), /*#__PURE__*/_react.default.createElement("ul", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17,
+          columnNumber: 5
+        }
+      }, /*#__PURE__*/_react.default.createElement("li", {
+        className: "nav-item",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18,
+          columnNumber: 7
+        }
+      }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+        to: "/",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18,
+          columnNumber: 32
+        }
+      }, "About")), /*#__PURE__*/_react.default.createElement("li", {
+        className: "nav-item",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+        to: "/animal",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19,
+          columnNumber: 34
+        }
+      }, "Adoptable Pets")), /*#__PURE__*/_react.default.createElement("li", {
+        className: "nav-item",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+        to: "/form",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20,
+          columnNumber: 34
+        }
+      }, "Apply for Adoption")), /*#__PURE__*/_react.default.createElement("li", {
+        className: "nav-item",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21,
+          columnNumber: 7
+        }
+      }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+        to: "/contact",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21,
+          columnNumber: 32
+        }
+      }, "Contact"))))));
+    }
+
+  }
+
+  var _default = Nav;
+  exports.default = _default;
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

@@ -1,0 +1,72 @@
+"use strict";
+
+var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = void 0;
+
+  var _react = require("react");
+
+  var _s = $RefreshSig$();
+
+  const useForm = (callback, validateForm) => {
+    _s();
+
+    const [values, setValues] = (0, _react.useState)({
+      name: "",
+      phone: "",
+      email: "",
+      message: ""
+    });
+    const [errors, setErrors] = (0, _react.useState)({});
+    const [isSubmitting, setIsSubmitting] = (0, _react.useState)(false);
+
+    const handleChange = event => {
+      const {
+        name,
+        value
+      } = event.target;
+      setValues({ ...values,
+        [name]: value
+      });
+    };
+
+    const handleSubmit = event => {
+      event.preventDefault();
+      event.target.reset(); //handling errors
+
+      setErrors(validateForm(values));
+      setIsSubmitting(true);
+    };
+
+    (0, _react.useEffect)(() => {
+      ///check to see if there are no errors
+      ///call callback
+      if (Object.keys(errors).length === 0 && isSubmitting) {
+        callback();
+      }
+    }, [errors]);
+    return {
+      handleChange,
+      handleSubmit,
+      values,
+      errors
+    };
+  };
+
+  _s(useForm, "uyClQOWV8wrF6nZUp31VgQf9FG4=");
+
+  var _default = useForm;
+  exports.default = _default;
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

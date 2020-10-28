@@ -1,0 +1,197 @@
+"use strict";
+
+var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = void 0;
+
+  require("./welcome.scss");
+
+  var _react = _interopRequireWildcard(require("react"));
+
+  var _Mac = _interopRequireDefault(require("./Mac.JPG"));
+
+  var _Circe = _interopRequireDefault(require("./Circe.JPG"));
+
+  var _Juniper = _interopRequireDefault(require("./Juniper.jpg"));
+
+  var _jsxFileName = "/Users/kendrakyndberg/Desktop/code/circe-build/src/Components/Welcome/Welcome.js";
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+  function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+  function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+  class Welcome extends _react.Component {
+    render() {
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "flex-container",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        src: _Mac.default,
+        className: "tabby welcome-item",
+        alt: "Tabby cat",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14,
+          columnNumber: 17
+        }
+      }), /*#__PURE__*/_react.default.createElement("h1", {
+        className: "title",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15,
+          columnNumber: 17
+        }
+      }, "Animal Rescue"), /*#__PURE__*/_react.default.createElement("img", {
+        src: _Circe.default,
+        className: "calico welcome-item",
+        alt: "Calico Cat",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16,
+          columnNumber: 17
+        }
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "text-right welcome-item",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_react.default.createElement("h1", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18,
+          columnNumber: 21
+        }
+      }, " Animal Rescue "), /*#__PURE__*/_react.default.createElement("p", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19,
+          columnNumber: 21
+        }
+      }, "Welcome to Pet Rescue! Let us introduce you to your new best friend. We believe life is better spent with pets. "), /*#__PURE__*/_react.default.createElement("h2", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20,
+          columnNumber: 21
+        }
+      }, " We Love Animals!!")), /*#__PURE__*/_react.default.createElement("div", {
+        className: "steps",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "stepOne process",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_react.default.createElement("p", {
+        className: "number",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24,
+          columnNumber: 25
+        }
+      }, "1"), /*#__PURE__*/_react.default.createElement("p", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25,
+          columnNumber: 25
+        }
+      }, "Head over to our \"Adoptable Animal's\" page to see if there's a pet that you think could be a good fit. ")), /*#__PURE__*/_react.default.createElement("div", {
+        className: "stepTwo process",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_react.default.createElement("p", {
+        className: "number",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28,
+          columnNumber: 25
+        }
+      }, "2"), /*#__PURE__*/_react.default.createElement("p", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 25
+        }
+      }, "Contact us and we will connect you with the foster to set up a Meet-and-Greet.")), /*#__PURE__*/_react.default.createElement("div", {
+        className: "stepThree process",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/_react.default.createElement("p", {
+        className: "number",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32,
+          columnNumber: 25
+        }
+      }, "3"), /*#__PURE__*/_react.default.createElement("p", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33,
+          columnNumber: 25
+        }
+      }, "Once you have fallen in love just fill out an adoption form. We will reach out to you once you've been approved to let you know when you can take home your new family member."))), /*#__PURE__*/_react.default.createElement("img", {
+        src: _Juniper.default,
+        alt: "yellow dog",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 36,
+          columnNumber: 17
+        }
+      }));
+    }
+
+  }
+
+  var _default = Welcome;
+  exports.default = _default;
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

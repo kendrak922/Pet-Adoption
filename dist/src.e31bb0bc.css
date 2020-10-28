@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap");
+body {
+  margin: 0 auto;
+  background-color: #92BFB1; }
+
+.flex-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center; }
+
+.title {
+  font-size: 70px;
+  color: #023c40;
+  font-family: "Nanum Gothic", sans-serif; }
+
+.tabby {
+  max-height: 500px;
+  max-width: 400px;
+  border-radius: 1%;
+  box-shadow: 10px 3px 5px gray; }
+
+.calico {
+  border-radius: 1%;
+  max-height: 300px;
+  max-width: 400px;
+  box-shadow: 5px 3px 5px gray; }
+
+.text-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  font-family: "Nanum Gothic", sans-serif;
+  background-color: #DE7C5A;
+  max-width: 300px;
+  flex-grow: 1;
+  box-shadow: 5px 5px 5px 5px gray; }
+
+.text-right p {
+  font-size: 20px; }
+
+.welcome-item {
+  margin: 15px; }
+
+.process {
+  margin: 20px;
+  max-width: 20rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #48304D; }
+
+.steps {
+  /* flex-basis: 100%; */
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around; }
+
+.number {
+  font-size: 6rem;
+  margin: 2rem; }
+
+.steps :hover {
+  animation: stretch; }
+
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap");
+body {
+  margin: 0 auto;
+  background-color: #92BFB1; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+input, textarea {
+  width: 500px;
+  height: 40px;
+  border-radius: 10px;
+  font-family: "Nanum Gothic", sans-serif; }
+
+.contactHead {
+  font-size: 80px;
+  font-family: "Caveat", cursive;
+  margin: 50px;
+  color: #023c40;
+  border-bottom: 3px solid; }
+
+textarea {
+  height: 100px; }
+
+label {
+  font-size: 24px;
+  color: #023c40;
+  font-family: "Nanum Gothic", sans-serif; }
+
+.submit {
+  width: 100px;
+  background-color: "Nanum Gothic", sans-serif; }
+
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap");
+body {
+  margin: 0 auto;
+  background-color: #92BFB1; }
+
+.container {
+  width: 90%;
+  margin: 0 auto; }
+
+.header {
+  background-color: #FFE4FA;
+  box-shadow: 10px 3px 5px gray;
+  font-family: "Nanum Gothic", sans-serif; }
+
+/* clearfix
+.header ::after {
+content: "";
+display: none;
+clear: both;
+} */
+nav {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center; }
+
+.logo {
+  height: 20px; }
+
+.company-name {
+  color: #48304D;
+  margin: 15px;
+  font-size: 25px;
+  font-family: "Caveat", cursive; }
+
+.brand {
+  display: flex;
+  align-items: center; }
+
+p {
+  font-family: "Nanum Gothic", sans-serif; }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex; }
+
+nav li {
+  margin-left: 35px;
+  /* For animation */
+  /* position: relative;  */ }
+
+a {
+  color: #48304D;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+
+/* For animation */
+nav li::before {
+  content: '';
+  display: block;
+  height: 3px;
+  background-color: #48304D;
+  /* position: absolute; */
+  top: 0;
+  width: 0%; }
+
+nav li:hover::before {
+  width: 100%; }
+
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap");
+body {
+  margin: 0 auto;
+  background-color: #92BFB1; }
+
+.flex-footer {
+  display: flex;
+  font-family: "Nanum Gothic", sans-serif;
+  flex-direction: row wrap;
+  background-color: #DE7C5A;
+  justify-content: space-around;
+  margin-top: 2em;
+  align-items: center;
+  color: #023c40; }
+
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap");
+body {
+  margin: 0 auto;
+  background-color: #92BFB1; }
+
+
+/*# sourceMappingURL=/src.e31bb0bc.css.map */
